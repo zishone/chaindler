@@ -1,2 +1,2 @@
-# chaindler
+# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build Status](https://github.com/zishone/chaindler/workflows/CI/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3ACI) [![Coverage Status](https://coveralls.io/repos/github/zishone/chaindler/badge.svg?branch=master)](https://coveralls.io/github/zishone/chaindler?branch=master) [![License](https://img.shields.io/npm/l/chaindler)](https://github.com/zishone/chaindler/blob/master/LICENSE)
 A simple request handler (controller/middleware) chainer
