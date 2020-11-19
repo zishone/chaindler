@@ -6,13 +6,13 @@ import {
 } from 'express';
 
 export class Chain {
-  private middlewares: any[];
+  private middlewares: Handler[];
 
-  constructor(...middlewares: any[]) {
+  constructor(...middlewares: Handler[]) {
     this.middlewares = middlewares;
   }
 
-  public handle(handler: Handler | any): any {
+  public handle(handler: Handler | any): Handler {
     return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
       try {
         let isClosed = false;
