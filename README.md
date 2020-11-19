@@ -1,4 +1,4 @@
-# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build Status](https://github.com/SuperInitialize/chaindler/workflows/CI/badge.svg)](https://github.com/SuperInitialize/chaindler/actions?query=workflow%3ACI) [![Coverage Status](https://coveralls.io/repos/github/SuperInitialize/chaindler/badge.svg?branch=master)](https://coveralls.io/github/SuperInitialize/chaindler?branch=master) [![License](https://img.shields.io/npm/l/chaindler)](https://github.com/SuperInitialize/chaindler/blob/master/LICENSE)
+# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build Status](https://github.com/SuperInitialize/chaindler/workflows/CI/badge.svg)](https://github.com/SuperInitialize/chaindler/actions?query=workflow%3ACI) [![Coverage Status](https://coveralls.io/repos/github/SuperInitialize/chaindler/badge.svg?branch=master)](https://coveralls.io/github/SuperInitialize/chaindler?branch=master) ![GitHub](https://img.shields.io/github/license/SuperInitialize/chaindler)
 A simple request handler (controller/middleware) chainer
 
 ## Installation
@@ -41,7 +41,9 @@ app.use('/hello', new Chain(mw1, mw2, mw3).handle(controller));
 ```
 NOTE: Example was with the assumption you are using `express.js`
 
-This module was developed with Node.js servers that uses `swagger-node`, `express-openapi`, and others kinds of modules that limits your ability to chain middlewares. This kinds of modules would require you to have your controllers in an json, and to use `chaindler` in that scenario would be something like this:
+This module was developed with Node.js servers that uses `swagger-node`, `express-openapi`, and other kinds of modules that limits your ability to chain middlewares in mind.
+
+These kinds of modules would require you to have your controllers in an object, and to use `chaindler` in that scenario would be something like this:
 ```javascript
 const controllers = {
   operation1: new Chain(mw1, mw2, mw3).handle(controller),
