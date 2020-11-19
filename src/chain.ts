@@ -13,7 +13,7 @@ export class Chain {
   }
 
   public handle(handler: Handler | any): any {
-    return async (req: Request, res: Response, next: NextFunction) => {
+    return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
       try {
         let isClosed = false;
         req.on('close', () => {

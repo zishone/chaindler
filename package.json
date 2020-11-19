@@ -33,9 +33,9 @@
   "author": "Zishran Garces <zishgarces@gmail.com> (https://github.com/zishone)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zishone/chaindler/issues"
+    "url": "https://github.com/SuperInitialize/chaindler/issues"
   },
-  "homepage": "https://github.com/zishone/chaindler#readme",
+  "homepage": "https://github.com/SuperInitialize/chaindler#readme",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/chai": "^4.2.11",
