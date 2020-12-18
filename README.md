@@ -1,4 +1,4 @@
-# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build Status](https://github.com/SuperInitialize/chaindler/workflows/CI/badge.svg)](https://github.com/SuperInitialize/chaindler/actions?query=workflow%3ACI) [![Coverage Status](https://coveralls.io/repos/github/SuperInitialize/chaindler/badge.svg?branch=master)](https://coveralls.io/github/SuperInitialize/chaindler?branch=master) ![GitHub](https://img.shields.io/github/license/SuperInitialize/chaindler)
+# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build Status](https://github.com/zishone/chaindler/workflows/CI/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3ACI) [![Coverage Status](https://coveralls.io/repos/github/zishone/chaindler/badge.svg?branch=master)](https://coveralls.io/github/zishone/chaindler?branch=master) ![GitHub](https://img.shields.io/github/license/zishone/chaindler)
 A simple request handler (controller/middleware) chainer
 
 ## Installation
@@ -54,7 +54,7 @@ const controllers = {
 ## Authors
 * **Zishran Julbert Garces**
 
-See also the list of [contributors](https://github.com/SuperInitialize/chaindler/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/zishone/chaindler/contributors) who participated in this project.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/SuperInitialize/chaindler/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/zishone/chaindler/blob/master/LICENSE) file for details.
