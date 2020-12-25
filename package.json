@@ -1,6 +1,6 @@
 {
   "name": "chaindler",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple request handler (controller/middleware) chainer",
   "main": "dist/index.js",
   "files": [
@@ -18,7 +18,6 @@
     "docs:deploy": "npm run docs && gh-pages --dotfiles --dist docs",
     "test": "mocha --require ts-node/register --require source-map-support/register --file test/index.ts test/**/*.test.ts --exit",
     "test:coverage": "nyc --reporter lcov --include src npm run test",
-    "test:coveralls": "cat coverage/lcov.info | coveralls",
     "prepare": "npm run build"
   },
   "repository": {
@@ -49,7 +48,6 @@
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "chai": "^4.2.0",
-    "coveralls": "^3.1.0",
     "eslint": "^7.13.0",
     "gh-pages": "^2.2.0",
     "mocha": "^7.1.2",
