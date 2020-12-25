@@ -1,12 +1,12 @@
 name: publish
 
 on:
-  push:
+  workflow_run:
+    workflows: [ "build" ]
     branches: [ master ]
 
 jobs:
   publish-npm:
-    workflows: ["build"]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
