@@ -1,8 +1,8 @@
-import { expect } from 'chai';
-import { EventEmitter } from 'events';
-import 'mocha';
-import { createSandbox } from 'sinon';
+import { afterEach, describe, it } from 'mocha';
 import { Chain } from '../../src/index';
+import { EventEmitter } from 'events';
+import { createSandbox } from 'sinon';
+import { expect } from 'chai';
 
 describe('chain', () => {
   const sandbox = createSandbox();
