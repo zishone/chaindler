@@ -12,6 +12,7 @@
   "scripts": {
     "cleanup": "rimraf dist && rimraf coverage && rimraf .nyc_output && rimraf docs",
     "lint": "eslint ./src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "docs": "typedoc --out docs --mode modules --tsconfig tsconfig.json src && touch docs/.nojekyll",
