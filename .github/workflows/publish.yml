@@ -18,16 +18,15 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           
-  publish-github:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-        registry-url: 'https://npm.pkg.github.com'
-    - run: npm install
-    - run: npm config set registry https://npm.pkg.github.com/zishone
-    - run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#   publish-github:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - uses: actions/setup-node@v1
+#       with:
+#         node-version: '12.x'
+#         registry-url: 'https://npm.pkg.github.com'
+#     - run: npm install
+#     - run: npm publish
+#       env:
+#         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
