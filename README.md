@@ -1,4 +1,4 @@
-# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build](https://github.com/zishone/chaindler/workflows/build/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3Abuild) [![Coverage](https://codecov.io/gh/zishone/chaindler/branch/master/graph/badge.svg)](https://codecov.io/gh/zishone/chaindler) [![License](https://img.shields.io/github/license/zishone/oas-express-starter)](https://github.com/zishone/oas-express-starter/blob/master/LICENSE)
+# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build](https://github.com/zishone/chaindler/workflows/build/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3Abuild) [![Coverage](https://codecov.io/gh/zishone/chaindler/branch/master/graph/badge.svg)](https://codecov.io/gh/zishone/chaindler) [![License](https://img.shields.io/github/license/zishone/chaindler)](https://github.com/zishone/chaindler/blob/master/LICENSE)
 A simple request handler (controller/middleware) chainer
 
 ## Installation
@@ -52,7 +52,7 @@ const controllers = {
 ```
 
 ## Authors
-* **Zishran Julbert Garces**
+* **Zishran Garces**
 
 See also the list of [contributors](https://github.com/zishone/chaindler/contributors) who participated in this project.
 
