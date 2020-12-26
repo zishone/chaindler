@@ -1,14 +1,14 @@
-# chaindler [![NPM](https://img.shields.io/npm/v/chaindler)](https://www.npmjs.com/package/chaindler) [![Build](https://github.com/zishone/chaindler/workflows/build/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3Abuild) [![Coverage](https://codecov.io/gh/zishone/chaindler/branch/master/graph/badge.svg)](https://codecov.io/gh/zishone/chaindler) [![License](https://img.shields.io/github/license/zishone/chaindler)](https://github.com/zishone/chaindler/blob/master/LICENSE)
+# chaindler [![NPM](https://img.shields.io/npm/v/@zishone/chaindler)](https://www.npmjs.com/package/@zishone/chaindler) [![Build](https://github.com/zishone/chaindler/workflows/build/badge.svg)](https://github.com/zishone/chaindler/actions?query=workflow%3Abuild) [![Coverage](https://codecov.io/gh/zishone/chaindler/branch/master/graph/badge.svg)](https://codecov.io/gh/zishone/chaindler) [![License](https://img.shields.io/github/license/zishone/chaindler)](https://github.com/zishone/chaindler/blob/master/LICENSE)
 A simple request handler (controller/middleware) chainer.
 
 ## Installation
 ```shell
-$ npm i chaindler
+$ npm i @zishone/chaindler
 ```
 ## Usage
 ### 1. Import chaindler
 ```javascript
-const { Chain } = require('chaindler');
+const { Chain } = require('@zishone/chaindler');
 ```
 ### 2. Write your middlewares
 ```javascript
