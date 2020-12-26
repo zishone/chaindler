@@ -1,8 +1,7 @@
 name: publish
 
 on:
-  workflow_run:
-    workflows: [ "build" ]
+  push:
     branches: [ master ]
 
 jobs:
@@ -28,7 +27,7 @@ jobs:
         node-version: '12.x'
         registry-url: 'https://npm.pkg.github.com'
     - run: npm install
-    - run: npm config set registry https://npm.pkg.github.com
+    - run: npm config set registry https://npm.pkg.github.com/zishone
     - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
