@@ -1,6 +1,6 @@
 {
   "name": "chaindler",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple request handler (controller/middleware) chainer",
   "main": "dist/index.js",
   "files": [
@@ -12,12 +12,13 @@
   "scripts": {
     "cleanup": "rimraf dist && rimraf coverage && rimraf .nyc_output && rimraf docs",
     "lint": "eslint ./src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "docs": "typedoc --out docs --mode modules --tsconfig tsconfig.json src && touch docs/.nojekyll",
     "docs:deploy": "npm run docs && gh-pages --dotfiles --dist docs",
-    "test": "mocha --require ts-node/register --require source-map-support/register --file test/index.ts test/**/*.test.ts --exit",
-    "test:coverage": "nyc --reporter lcov --include src npm run test",
+    "test": "mocha --require ts-node/register --require source-map-support/register --file tests/index.ts tests/**/*.test.ts --exit",
+    "test:coverage": "nyc --require @istanbuljs/nyc-config-typescript --reporter lcov --include src npm run test",
     "prepare": "npm run build"
   },
   "repository": {
@@ -49,9 +50,14 @@
     "@typescript-eslint/parser": "^4.8.1",
     "chai": "^4.2.0",
     "eslint": "^7.13.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
     "gh-pages": "^2.2.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
     "sinon": "^9.2.1",
     "source-map-support": "^0.5.19",

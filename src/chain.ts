@@ -1,9 +1,4 @@
-import {
-  Handler,
-  NextFunction,
-  Request,
-  Response,
-} from 'express';
+import { Handler, NextFunction, Request, Response } from 'express';
 
 export class Chain {
   private middlewares: Handler[];
@@ -23,8 +18,8 @@ export class Chain {
           if (isClosed) {
             break;
           }
-          await new Promise((resolve, reject) => {
-            middleware(req, res, (error: any) => {
+          await new Promise<void>((resolve, reject): void => {
+            middleware(req, res, (error: any): void => {
               if (error) {
                 reject(error);
               } else {
