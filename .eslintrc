@@ -43,8 +43,5 @@
     "prefer-rest-params": ["off"],
     "object-property-newline": ["error"]
   },
-  "ignorePatterns": [
-    "src/types",
-    "db/migrations"
-  ]
+  "ignorePatterns": ["src/types"]
 }

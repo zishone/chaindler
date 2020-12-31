@@ -1,13 +1,13 @@
 {
   "name": "@zishone/chaindler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple request handler (controller/middleware) chainer",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "directories": {
-    "test": "test"
+    "test": "tests"
   },
   "scripts": {
     "cleanup": "rimraf dist && rimraf coverage && rimraf .nyc_output && rimraf docs",

@@ -1,4 +1,4 @@
-import { afterEach, describe, it } from 'mocha';
+import { afterEach, it } from 'mocha';
 import { Chain } from '../../src/index';
 import { EventEmitter } from 'events';
 import { createSandbox } from 'sinon';
